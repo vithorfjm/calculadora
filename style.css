@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(23, 107, 93), rgb(41, 41, 124));
+}
+
+#container {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 350px;
+}
+
+#result-container {
+    background-color: white;
+    width: 80%;
+    height: 70px;
+}
+
+.button {
+    width: 75px;
+    height: 75px;
+    font-size: 2rem;
+
+}
