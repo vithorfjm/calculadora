@@ -8,21 +8,70 @@ body {
     background-image: linear-gradient(to left, rgb(23, 107, 93), rgb(41, 41, 124));
 }
 
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
 #container {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.692);
-    width: 350px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 #result-container {
-    background-color: white;
-    width: 80%;
+    background-color: transparent;
+    width: 100%;
     height: 70px;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+    border: solid #4D4DFF 1px;
 }
 
 .button {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     font-size: 2rem;
+    border: solid #4D4DFF 1px;
+    margin: 2px;
+    color: white;
+    background-color: transparent;
+}
 
+button:hover {
+    border: none;
+    background-color: rgba(77, 77, 255, 0.600);
+}
+
+button:active {
+    border: solid #4D4DFF 1px;
+}
+
+.pink {
+    border: solid #c93dc9 1px;
+}
+
+.pink:hover {
+    border: none;
+    background-color: rgba(201, 61, 201, 0.600);
+}
+
+.pink:active {
+    border: solid #c93dc9 1px;
+}
+
+.equal {
+    height: 136px;
+}
+
+.zero {
+    width: 136px;
+}
+
+.c {
+    width: 136px;
 }
