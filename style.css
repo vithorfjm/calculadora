@@ -11,7 +11,7 @@ body {
 h1 {
     text-align: center;
     color: white;
-    margin: 20px auto 50px auto;
+    margin: 20px auto 30px auto;
 }
 
 #container {
@@ -20,7 +20,7 @@ h1 {
     width: 300px;
     padding: 10px;
     border-radius: 10px;
-
+    margin-bottom: 46px;
 }
 
 #result-container {
@@ -77,4 +77,29 @@ button:active {
 
 .zero, .c {
     width: 136px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0, 0.692);
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+em {
+    color:#9090c2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #4D4DFF;
+}
+
+a:hover {
+    color:#3838c2;
 }
