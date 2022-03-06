@@ -30,6 +30,13 @@ h1 {
     margin: 0 auto 10px auto;
     border-radius: 10px;
     border: solid #4D4DFF 1px;
+    justify-content: right;
+}
+
+#result {
+    justify-content: right;
+    color: white;
+    font-size:2.4rem;
 }
 
 .button {
