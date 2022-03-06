@@ -11,7 +11,7 @@ body {
 h1 {
     text-align: center;
     color: white;
-    margin-bottom: 50px;
+    margin: 20px auto 50px auto;
 }
 
 #container {
@@ -68,10 +68,6 @@ button:active {
     height: 136px;
 }
 
-.zero {
-    width: 136px;
-}
-
-.c {
+.zero, .c {
     width: 136px;
 }
