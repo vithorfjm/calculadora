@@ -1,36 +1,41 @@
 const result = document.querySelector("#result");
-var primeiroNum = []
+var numero = []
 let botoes = document.querySelectorAll(".button");
 
 for (var i=0; i<botoes.length; i++){
-    botoes[i].addEventListener('click', function(){
-        primeiroNum.push(this.innerText);
-        switch(primeiroNum[0]){
+    botoes[i].addEventListener('click', function(){ 
+        numero.push(this.innerHTML);
+        switch(numero[0]){
             case '+':
-                primeiroNum.shift();
+                numero.shift();
                 break;
             case 'C':
-                primeiroNum.shift();
+                numero.shift();
                 break;
             case '*':
-                primeiroNum.shift();
+                numero.shift();
                 break;
             case '/':
-                primeiroNum.shift();
+                numero.shift();
                 break;
             case '=':
-                primeiroNum.shift();
+                numero.shift();
                 break;
             default:
-                result.innerHTML = primeiroNum.join([separador = '']);
-        }
-        for (var i=0; i<primeiroNum.length; i++)
-            if (primeiroNum[i] == 'C'){
-                primeiroNum.splice(0, primeiroNum.length);
-                result.innerHTML = "";
-            }
-        console.log(primeiroNum);
+                result.innerHTML = numero.join([separador = '']);
+            }      
+        for (var i=0; i<numero.length; i++)
+            if (numero[i] == 'C'){
+            numero.splice(0, numero.length);
+            result.innerHTML = "";
+        } 
+
+        if (numero[numero.length - 1] == '='){
+            result.innerHTML = eval(result.innerHTML.replace('=', ''));
             
-           
+        }
+          console.log(numero); 
     });
 }
+
+        // }
